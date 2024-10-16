@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+check if all the boxes are unlocked or not
+"""
+
 def canUnlockAll(boxes):
     """this function should return if the boxes can be opened or not"""
     vis = [0] * len(boxes)
