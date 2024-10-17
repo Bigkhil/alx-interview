@@ -10,10 +10,11 @@ def minOperations(n):
         return 0
 
     sum = 0
-    sup = n
-    for i in range(2, sup + 1):
-        while (n % i == 0):
-            sum += i
-            n = n / i
+    factor = 2
+    while n > 1:
+        while n % factor == 0:
+            sum += factor
+            n /= factor
+        factor += 1
 
     return sum
