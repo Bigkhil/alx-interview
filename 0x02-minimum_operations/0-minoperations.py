@@ -10,7 +10,7 @@ def minOperations(n):
         return 0
     
     sum = 0
-    for i in range (2, n+1):
+    for i in range (2, n + 1):
         while (n % i == 0):
             sum += i
             n /= i
